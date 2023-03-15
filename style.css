@@ -1,0 +1,107 @@
+
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+
+
+       .top {
+line-height: normal; 
+padding: 2%;
+ background: #9bd7d1;
+  margin: 3% 0;
+  margin-left: 15px;
+   font-family: 
+   Arial ;
+   font-size: 20;
+  }
+
+
+.tops {
+line-height: 
+normal; padding: 1%; 
+background: #ea9034; 
+margin: 1% 0 2% 0; 
+margin-left: 15px;
+font-family: Arial;
+font-size: 20;
+}
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+}
+
+#form {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+
+.app {
+line-height: 
+normal; padding: 1%; 
+background: #ea9034; 
+margin: 1% 0 2% 0; 
+margin-left: 15px;
+font-family: Arial;
+}
+
+.select {
+    width: 50%;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}

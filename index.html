@@ -1,0 +1,566 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Validation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+<script defer src="./index.js"></script>
+</head>
+<body>
+         
+                <div class="details personal">
+                            
+<center>                                                    
+<div class="top"> 
+<b>Application Form</b>
+</center>
+</div>
+
+<center>
+ <div class="tops">
+<b>Personal Information</b>                        
+</center>
+</div>
+ <!--First Name-->
+<form id="form" action="/">
+  <div class="fields">
+          <div class="input-field">
+        <div class="input-control">
+<label for="First">First Name</label>
+<input id="First" name="First" placeholder="Your First Name" type="text" required></div>
+</div>
+
+      <div class="input-field">
+               <div class="input-control">
+<label for="Middle">Middle Name</label>
+<input id="Middle" name="Middle" placeholder="Your Middle Name" type="text" required>
+</div></div>
+
+ <!--Last Name-->
+
+      <div class="input-field">
+                       <div class="input-control">
+<label for="Last">Last Name</label>
+<input id="Last" name="Last" type="text" required>
+</div></div>
+ 
+<div class="input-field">
+<label for="Date">Date of Birth</label>
+<input type="date" placeholder="Enter birth date" required>
+</div>
+
+
+      <div class="input-field">
+<label for="Suffix">Suffix</label>
+<input id="Suffix" name="Suffix" placeholder="Optional"type="text">
+</div>     
+
+<div class="input-field">
+<p>Sex</p>
+<select id="Sex" name="Sex" required>
+<option value="select">select</option>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+</div></select>
+
+<div class="input-field">
+    <div class="input-control">
+<label for="Contact">Contact Number</label>
+<input id="Contact"name="Contact" type="Contact" placeholder="Your Contact Number">
+<div class="error"></div>
+</div></div></div>
+
+<div class="fields">
+<div class="input-field">
+<label for="SKYPE">SKYPE ID</label>
+<input id="SKYPE"name="SKYPE" placeholder="Your SKYPE ID" type="SKYPE" required></div></div>
+
+<div class="fields">
+<div class="input-field">
+<label for="email">Email</label>
+<input id="email" name="email" placeholder="Your Email" type="text" required></div>
+
+<p>Region</p>
+<div class="fields">
+<div class="input-field">
+<select id="Region" name="Region" required>
+<option value="select">select</option>
+<option value="1">Region I – Ilocos Region</option>
+<option value="2">Region II – Cagayan</option>
+<option value="3">Region III – Central Luzon</option>
+<option value="4">Region IV B - MIMAROPA</option>
+<option value="5">Region V – Bicol Region</option>
+<option value="6">Region VI – Western Visayas</option>
+<option value="7">Region VII – Central Visayas</option>
+<option value="8">Region VIII – Eastern Visayas</option>
+<option value="9">Region IX – Zamboanga Peninsula</option>
+<option value="10">Region X – Northern Mindanao</option>
+<option value="11">Region XI – Davao Region</option>
+<option value="12">Region XII – SOCCSKSARGEN</option>
+<option value="13"> Region XIII – Caraga</option>
+<option value="14"> NCR – National Capital Region</option>
+<option value="15">CAR – Cordillera Administrative Region</option>
+<option value="16">ARMM – Autonomous Region in Muslim Mindanao</option>
+</select> 
+<div class="error"></div></div></select>
+
+<p>Province</p>
+<div class="fields">
+<div class="input-field">
+<select id="Province" name="Province"required>
+<option value="select">select</option>
+<option value="---------------Region I – Ilocos Region---------------">---------------Region I – Ilocos Region---------------</option>
+ <option value="Ilocos Norte">Ilocos Norte</option>
+<option value="Ilocos Sur">Ilocos Sur</option>
+<option value=" La Union"> La Union</option>
+<option value="Pangasinan">Pangasinan</option>
+<option value="---------------Region II – Cagayan Valley---------------">---------------Region II – Cagayan Valley---------------</option>
+<option value="Batanes">Batanes</option>
+<option value="Cagayan">Cagayan</option>
+<option value="Isabela">Isabela</option>
+<option value="Nueva Vizcaya">Nueva Vizcaya</option>
+<option value="Quirino">Quirino</option>
+ <option value="---------------Region III – Central Luzon---------------">---------------Region III – Central Luzon---------------</option>
+ <option value="Bataan">Bataan</option>
+<option value="Bulacan">Bulacan</option>
+<option value=" Nueva Ecija"> Nueva Ecija</option>
+<option value="Pampanga">Pampanga</option>
+<option value="Tarlac">Tarlac</option>
+<option value="Zambales">Zambales</option>
+<option value="Aurora">Aurora</option>
+<option value="---------------Region IV A – CALABARZON---------------
+">---------------Region IV A – CALABARZON---------------
+</option>
+<option value="Batangas">Batangas</option>
+<option value="Cavite">Cavite</option>
+<option value="Laguna">Laguna</option>
+<option value="Quezon">Quezon</option>
+<option value="Rizal">Rizal</option>
+
+<option value="---------------Region IV B - MIMAROPA---------------">---------------Region IV B - MIMAROPA---------------</option>
+<option value="Marinduque">Marinduque</option>
+<option value="Occidental Mindoro">Occidental Mindoro</option>
+<option value="Oriental Mindoro">Oriental Mindoro</option>
+<option value="Palawan">Palawan</option>
+<option value="Romblon">Romblon</option>
+
+<option value=" ---------------Region V – Bicol Region---------------
+"> ---------------Region V – Bicol Region---------------
+</option>
+<option value="Albay">Albay</option>
+<option value="Camarines Norte
+">Camarines Norte</option>
+<option value="Camarines Sur">Camarines Sur</option>
+<option value="Catanduanes">Catanduanes</option>
+<option value="Masbate">Masbate</option>
+<option value="Sorsogon">Sorsogon</option>
+
+<option value="---------------Region VI – Western Visayas---------------
+">---------------Region VI – Western Visayas---------------
+</option>
+
+<option value="Aklan">Aklan</option>
+<option value="Antique">Antique</option>
+<option value="Capiz">Capiz</option>
+<option value="Negros Occidental">Negros Occidental</option>
+<option value="Guimaras">Guimaras</option>
+
+<option value="---------------Region VII – Central Visayas---------------
+">---------------Region VII – Central Visayas---------------
+</option>
+<option value="Bohol">Bohol</option>
+<option value="Cebu">Cebu</option>
+<option value="Negros Oriental">Negros Oriental</option>
+<option value="Siquijor">Siquijor</option>
+
+<option value="---------------Region VIII – Eastern Visayas---------------
+">---------------Region VIII – Eastern Visayas---------------
+</option>
+<option value="Eastern Samar">Eastern Samar</option>
+<option value="Leyte">Leyte</option>
+<option value="Northern Samar">Northern Samar</option>
+<option value="Western Samar">Western Samar</option>
+<option value="Southern Leyte">Southern Leyte</option>
+<option value="Biliran">Biliran</option>
+
+<option value="------------Region IX – Zamboanga Peninsula------------">------------Region IX – Zamboanga Peninsula------------</option>
+
+<option value=" Zamboanga Del Norte
+"> Zamboanga Del Norte
+</option>
+<option value="Zamboanga Del Sur">Zamboanga Del Sur</option>
+<option value="Zamboanga Sibugay">Zamboanga Sibugay</option>
+<option value="City of Isabela">City of Isabela</option>
+
+<option value=" --------------Region X – Northern Mindanao-------------
+"> --------------Region X – Northern Mindanao-------------
+</option>
+<option value="Bukidnon">Bukidnon</option>
+<option value="Camiguin">Camiguin</option>
+<option value="Lanao Del Norte
+">Lanao Del Norte
+</option>
+<option value=" Misamis Occidental
+"> Misamis Occidental
+</option>
+<option value="  Misamis Oriental
+">  Misamis Oriental
+</option>
+
+<option value="----------------Region XI – Davao Region----------------
+">----------------Region XI – Davao Region----------------
+</option>
+<option value="Davao Del Norte">Davao Del Norte</option>
+<option value="Davao Del Sur">Davao Del Sur</option>
+<option value="Davao Oriental">Davao Oriental</option>
+<option value="Davao De Oro">Davao De Oro</option>
+<option value="Davao Occidental">Davao Occidental</option>
+
+<option value=" ---------------Region XII – SOCCSKSARGEN--------------
+"> ---------------Region XII – SOCCSKSARGEN--------------
+</option>
+<option value="Cotabato">Cotabato</option>
+<option value="South Cotabato
+">South Cotabato
+</option>
+<option value="Sultan Kudarat">Sultan Kudarat</option>
+<option value="Sarangani">Sarangani</option>
+<option value="Cotabato City">Cotabato City</option>
+
+
+<option value="---------------------Region XIII – Caraga------------------ 
+">---------------------Region XIII – Caraga------------------ 
+</option>
+<option value="Agusan Del Norte
+">Agusan Del Norte
+</option>
+<option value=" Agusan Del Sur
+"> Agusan Del Sur
+</option>
+<option value=" Surigao Del Norte
+"> Surigao Del Norte
+</option>
+<option value="Surigao Del Sur
+">Surigao Del Sur
+</option>
+<option value="Dinagat Islands
+">Dinagat Islands
+</option>
+
+<option value=" ---------------NCR – National Capital Region-------------
+"> ---------------NCR – National Capital Region-------------
+</option>
+<option value="  NCR, First District
+">  NCR, First District
+</option>
+<option value="NCR, Second District
+">NCR, Second District
+</option>
+<option value=" NCR, Third District
+"> NCR, Third District
+</option>
+<option value=" NCR, Fourth District
+"> NCR, Fourth District
+</option>
+
+<option value="---------CAR – Cordillera Administrative Region----------
+">---------CAR – Cordillera Administrative Region----------
+</option>
+<option value="Abra">Abra</option>
+<option value="Benguet">Benguet</option>
+<option value="Ifugao">Ifugao</option>
+<option value="Kalinga">Kalinga</option>
+<option value="Mountain Province
+">Mountain Province
+</option>
+<option value="Apayao">Apayao</option>
+
+<option value="--ARMM – Autonomous Region in Muslim Mindanao--
+">--ARMM – Autonomous Region in Muslim Mindanao--
+</option>
+<option value=" Basilan
+"> Basilan
+</option>
+<option value="Lanao Del Sur
+">Lanao Del Sur
+</option>
+<option value="Maguindanao">Maguindanao</option>
+<option value="Sulu">Sulu</option>
+<option value="Tawi-Tawi
+">Tawi-Tawi
+</option>
+  </select>
+<div class="error"></div>
+</div></select>
+
+<p>City/Municipality </p>
+<div class="fields">
+<div class="input-field">
+<select id="City" name="City" required>
+<option value="select">select</option>
+<option value="-------Ilocos Norte-------">-------Ilocos Norte-------</option>
+<option value="Adams">Adams</option>
+<option value="Bacarra">Bacarra</option>
+<option value="Badoc">Badoc</option>
+<option value="Bangui">Bangui</option>
+<option value="Banna">Banna</option>
+<option value="Burgos">Burgos </option>
+<option value="Carasi">Carasi</option>
+<option value="Batac">Batac</option>
+<option value="Currimao">Currimao</option>
+<option value="Dingras">Dingras</option>
+<option value="-------Ilocos Sur-------">-------Ilocos Sur-------</option>
+<option value="Alilem">Alilem</option>
+<option value="Banayoyo">Banayoyo</option>
+<option value="Bantay">Bantay</option>
+<option value="Burgos">Burgos</option>
+<option value="Cabugao">Cabugao</option>
+<option value="Caoayan">Caoayan</option>
+<option value="Cervantes">Cervantes</option>
+<option value="Candon">Candon</option>
+<option value="-------La Union-------">-------La Union-------</option>
+<option value="Agoo">Agoo</option>
+<option value="Aringay">Aringay</option>
+<option value="Bacnotan">Bacnotan</option>
+<option value="Bagulin">Bagulin</option>
+<option value="Balaoan">Balaoan</option>
+<option value="Bangar">Bangar</option>
+<option value="Bani">Bani</option>
+<option value="Caba">Caba</option>
+<option value="-------Pangasinan-------">-------Pangasinan-------</option>
+<option value="Agoo">Agoo</option>
+<option value="Aguilar">Aguilar</option>
+<option value="Alcala">Alcala</option>
+<option value="Anda">Anda</option>
+<option value="Asingan">Asingan</option>
+<option value="Balungao">Balungao</option>
+<option value="Bayambang">Bayambang</option>
+<option value="Bautista">Bautista</option>
+</div></select>
+
+<p>ZIP Code</p>
+<select id="ZIP" name="ZIP" required>
+<option value="select">select</option>
+<option value="400">400</option>
+<option value="401">401</option>
+<option value="410">410</option>
+<option value="420">420</option>
+<option value="550">560</option>
+<option value="700">700</option>
+<option value="701">701 </option>
+<option value="702">702</option>
+<option value="703">703</option>
+<option value="704">704</option>
+<option value="705">705</option>
+<option value="706">706</option>
+<option value="707">707</option>
+<option value="708">708</option>
+<option value="709">709</option>
+<option value="800">800</option>
+<option value="801">801</option>
+<option value="802">802</option>
+<option value="810">810</option>
+<option value="820">820</option>
+<option value="830">830</option>
+<option value="840">840</option>
+<option value="900">900</option>
+<option value="901">901</option>
+<option value="902">902</option>
+<option value="903">903</option>
+<option value="904">904</option>
+<option value="1101">1101</option>
+<option value="1102">1102</option>
+<option value="1103">1103</option>
+<option value="1104">1104</option>
+<option value="1105">1105</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+<option value="2002">2002</option>
+<option value="2003">2003</option>
+<option value="2004">2004</option>
+<option value="2005">2005</option>
+<option value="2006">2006</option>
+<option value="2007">2007</option>
+<br><br>
+<div class="error"></div>
+</div></select>
+
+<p>How did you learn about Weblio?</p=1>
+<div class="select">
+<select id="How" name="How" required>
+    <option value="select">select</option>
+ <option value="Google Search">Google Search</option>
+<option value="Facebook">Facebook</option>
+<option value="Instagram">Instagram</option>
+<option value="Youtube">Youtube</option>
+<option value="Indeed">Indeed</option>
+<option value="Linkedin">Linkedin</option>
+<option value="Jobstreet">Jobstreet</option>
+<option value="Job Fair">Job Fair</option>
+<option value="Job Portal">Job Portal</option>
+<option value="Referred by someone">Referred by someone</option>
+<option value="Others">Others</option>
+  </select> </div></div></div></div><br><br>
+
+<center>
+ <div class="tops">
+<b>Educational Background</b>                        
+</center></div> </div> </div>
+
+<p>Highest Educational Attainment</p>
+<div class="fields">
+<div class="input-field">
+    <select id="Attainment" name="Attainment" required>
+    <option value="select">select</option>
+<option value="Doctorate Degree">Doctorate Degree</option>
+<option value="Master Degree">Master Degree</option>
+<option value="Bachelor Degree">Bachelor Degree</option>
+<option value="Associate Degree">Associate Degree</option>
+<option value="Highschool Graduate">Highschool Graduate</option>
+<option value="Primary Level">Primary Level</option>
+<div class="error"></div></div></select></div></div>
+
+<div class="fields">
+<div class="input-field"><label for="Date">Last School Attended (Please Specify)</label>
+<input id="Attended" name="Attended" placeholder="Your Last School Attended " type="text" required>
+</div>
+
+<p> License </p>
+<div class="fields">
+<div class="input-field">
+<select id="Professional License" name="Professional License" required>
+    <option value="select">select</option>
+<option value="Professional License">Professional License</option>
+<option value="None">None</option>
+<div class="error"></div>
+</div></select>
+
+
+<p> Certificates </p>
+<div class="fields">
+<div class="input-field">
+    <select id="Certificates" name="Certificates" required>
+    <option value="select">select</option>
+<option value="ESL">ESL related certificates</option>
+<option value="Non-ESL">Non-ESL related certificates</option>
+<option value="None">None</option>
+<div class="error"></div>
+</div></select></div></div></div>
+
+<center>
+ <div class="tops">
+<b>Work Experience</b>                        
+</center>
+</div>
+
+
+ <p>Do you have any teaching experience?</p>
+<div class="fields">
+<div class="input-field">
+    <select id="experience" name="experience" required>
+    <option value="select">select</option>
+<option value="Yes">Yes</option>
+<option value="No">No</option>
+<div class="error"></div>
+</div></select></div>
+
+
+ <p>What type of teaching experience?</p>
+<div class="fields">
+<div class="input-field">
+<select id="type" name="type" required>
+<option value="select">select</option>
+<option value="Online English Teaching (Home-based)">Online English Teaching (Home-based)</option>
+<option value="Online English Teaching (Office-based)">Online English Teaching (Office-based)</option>
+<option value="English Tutoring (Man-to-Man Teaching)">English Tutoring (Man-to-Man Teaching)</option>
+<option value="Classroom Set Up (Primary, Secondary, or Tertiary)">Classroom Set Up (Primary, Secondary, or Tertiary)</option>
+<div class="error"></div>
+</div></select></div>
+
+
+<p>Years of Teaching </p>
+<div class="fields">
+<div class="input-field">
+<select id="Years" name="Years" required>
+<option value="select">select</option>
+<option value="1 year">1 year</option>
+<option value="2 years">2 years</option>
+<option value="3 year">3 year</option>
+<option value="4 years">4 years</option>
+<option value="5 years">5 years</option>
+<option value="6 years">6 years</option>
+<option value="7 years">7 years</option>
+<option value="8 years">8 years</option>
+<option value="9 years">9 years</option>
+<option value="10 years">10 years</option>
+<option value=" more than 10 years"> more than 10 years</option>
+<div class="error"></div>
+</div></select></div>
+
+                               
+<p>Other Work Experience </p>
+Years<select id="Work" name="Work" required>
+<option value="select">select</option>
+<option value="Architecture and Engineering">Architecture and Engineering</option>
+<option value="Building and Grounds Cleaning and Maintenance">Building and Grounds Cleaning and Maintenance</option>
+<option value="Business and Financial Operations">Business and Financial Operations</option>
+<option value="Community and Social Services">Community and Social Services</option>
+<option value="Computer and Mathematical">Computer and Mathematical</option>
+<option value=" Construction and Extraction "> Construction and Extraction </option>
+<option value="Education, Training, and Library ">Education, Training, and Library </option>
+<option value="Food Preparation and Serving Related
+">Food Preparation and Serving Related</option>
+<option value="Healthcare Practitioners and Technical
+">Healthcare Practitioners and Technical
+</option>
+<option value=" Healthcare Support"> Healthcare Support</option>
+<option value=" Installation, Maintenance, and Repair"> Installation, Maintenance, and Repair</option>
+<option value="Legal">Legal</option>
+<option value="Life, Physical, and Social Science">Life, Physical, and Social Science</option>
+<option value="Management">Management</option>
+<option value="Military Specific">Military Specific</option>
+<option value="Office and Administrative Support">Office and Administrative Support</option>
+<option value="Personal Care and Service">Personal Care and Service</option>
+<option value="Part-time (PM schedule)">Part-time (PM schedule)</option>
+<div class="error"></div>
+</div></select></div>
+
+<center>
+ <div class="tops">
+<b>Most Available Time to Teach</b>                        
+</center>
+</div>
+
+
+ <p>Day</p>
+<select id="Day" name="Day" required>
+    <option value="select">select</option>
+<option value="Weekdays">Weekdays</option>
+<option value="Weekends ">Weekends </option>
+<option value="Both Weekdays and Weekends">Both Weekdays and Weekends</option>
+</div></select></div>
+
+<p>Time</p>
+<select id="Time" name="Time" required>
+<option value="select">select</option>
+<option value="08:00 - 13:00">08:00 - 13:00</option>
+<option value="13:00 - 16:00">13:00 - 16:00</option>
+<option value="00:00 - 08:00">00:00 - 08:00</option>
+<option value="16:00 - 24:00">16:00 - 24:00</option>
+<div class="error"></div>
+</div></select></div>
+
+<input type="checkbox" id="certify" name="certify" value="information"required>
+<label for="certify">I hereby certify that the above information is true and correct.</label><br>
+<input type="checkbox" id="agree" name="agree" value="conditions">
+<label for="agree">I have read and agree with the terms and conditions of Non-Disclosure Agreement.</label><br>
+
+           <button type="submit">Submit</button> 
+        </form>
+    </div>
+</body>
+</html>
