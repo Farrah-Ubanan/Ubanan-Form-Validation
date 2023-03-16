@@ -2,11 +2,10 @@ const form = document.getElementById('form');
 const Contact = document.getElementById('Contact');
 const SKYPE = document.getElementById('SKYPE');
 const email = document.getElementById('email');
-const Attended = document.getElementById('Attended');
+var Region = document.getElementById('Region');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
-
     validateInputs();
 
 });
@@ -40,23 +39,18 @@ const validateInputs = () => {
     const ContactValue = Contact.value.trim();
     const SKYPEValue = SKYPE.value.trim();
     const emailValue = email.value.trim();
-    const AttendedValue = Attended.value.trim();
-
+    var Region = Region.value.trim();
 
     
-  if(ContactValue === '') {
-        setError (Contact , 'Contact Number is required');
-    } else if (ContactValue.=/^{\d,\s,\=,\-]{5,20]/) {
-       setSuccess(Contact);
+  if(RegionValue === '1') {
+        setError (Region , 'please select');
+    } else {
+       setSuccess(Region);
     }
-    else{
-        setError(Contact, 'Input a valid Contact Number.')
-    }
-
 
   if(SKYPEValue === '') {
         setError(SKYPE, 'SKYPE ID is required');
-    } else if (SKYPEValue..=/^{\d,\s,\=,\-]{5,20]/) {
+    } else if (SKYPEValue..={5,20]/) {
          setSuccess(SKYPE);
     }
     else{
@@ -71,5 +65,6 @@ const validateInputs = () => {
         setSuccess(email);
     }
 
+else setSuccess(submit);
 
 };
