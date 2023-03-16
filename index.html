@@ -25,6 +25,7 @@
 <b>Personal Information</b>                        
 </center>
 </div>
+<div class="container">
  <!--First Name-->
 <form id="form" action="/">
   <div class="fields">
@@ -53,39 +54,38 @@
 <input type="date" placeholder="Enter birth date" required>
 </div>
 
-
       <div class="input-field">
 <label for="Suffix">Suffix</label>
 <input id="Suffix" name="Suffix" placeholder="Optional"type="text">
-</div>     
+</div>
 
-<div class="input-field">
 <p>Sex</p>
 <select id="Sex" name="Sex" required>
 <option value="select">select</option>
 <option value="Male">Male</option>
 <option value="Female">Female</option>
-</div></select>
+</select>
+
+
 
 <div class="input-field">
     <div class="input-control">
 <label for="Contact">Contact Number</label>
 <input id="Contact"name="Contact" type="Contact" placeholder="Your Contact Number">
 <div class="error"></div>
-</div></div></div>
+</div></div>
 
-<div class="fields">
+
 <div class="input-field">
 <label for="SKYPE">SKYPE ID</label>
 <input id="SKYPE"name="SKYPE" placeholder="Your SKYPE ID" type="SKYPE" required></div></div>
 
-<div class="fields">
+  <div class="fields">
 <div class="input-field">
 <label for="email">Email</label>
 <input id="email" name="email" placeholder="Your Email" type="text" required></div>
 
 <p>Region</p>
-<div class="fields">
 <div class="input-field">
 <select id="Region" name="Region" required>
 <option value="select">select</option>
@@ -106,10 +106,9 @@
 <option value="15">CAR – Cordillera Administrative Region</option>
 <option value="16">ARMM – Autonomous Region in Muslim Mindanao</option>
 </select> 
-<div class="error"></div></div></select>
+</div>
 
 <p>Province</p>
-<div class="fields">
 <div class="input-field">
 <select id="Province" name="Province"required>
 <option value="select">select</option>
@@ -293,13 +292,11 @@
 <option value="Tawi-Tawi
 ">Tawi-Tawi
 </option>
-  </select>
-<div class="error"></div>
-</div></select>
+</select></div>
+
+
 
 <p>City/Municipality </p>
-<div class="fields">
-<div class="input-field">
 <select id="City" name="City" required>
 <option value="select">select</option>
 <option value="-------Ilocos Norte-------">-------Ilocos Norte-------</option>
@@ -385,14 +382,12 @@
 <option value="2005">2005</option>
 <option value="2006">2006</option>
 <option value="2007">2007</option>
-<br><br>
-<div class="error"></div>
 </div></select>
 
-<p>How did you learn about Weblio?</p=1>
-<div class="select">
+<p>How did you learn about Weblio?</p>
+<div class="input-field">
 <select id="How" name="How" required>
-    <option value="select">select</option>
+<option value="select">select</option>
  <option value="Google Search">Google Search</option>
 <option value="Facebook">Facebook</option>
 <option value="Instagram">Instagram</option>
@@ -404,87 +399,70 @@
 <option value="Job Portal">Job Portal</option>
 <option value="Referred by someone">Referred by someone</option>
 <option value="Others">Others</option>
-  </select> </div></div></div></div><br><br>
+</select></div></div>
 
 <center>
  <div class="tops">
 <b>Educational Background</b>                        
-</center></div> </div> </div>
-
-<p>Highest Educational Attainment</p>
+</center> 
 <div class="fields">
 <div class="input-field">
-    <select id="Attainment" name="Attainment" required>
-    <option value="select">select</option>
+<p>Highest Educational Attainment</p>
+<select id="Attainment" name="Attainment" required>
+<option value="select">select</option>
 <option value="Doctorate Degree">Doctorate Degree</option>
 <option value="Master Degree">Master Degree</option>
 <option value="Bachelor Degree">Bachelor Degree</option>
 <option value="Associate Degree">Associate Degree</option>
 <option value="Highschool Graduate">Highschool Graduate</option>
 <option value="Primary Level">Primary Level</option>
-<div class="error"></div></div></select></div></div>
+</select></div>
+<div class="input-field">
 
-<div class="fields">
-<div class="input-field"><label for="Date">Last School Attended (Please Specify)</label>
-<input id="Attended" name="Attended" placeholder="Your Last School Attended " type="text" required>
-</div>
+<label for="Date">Last School Attended (Please Specify)</label>
+<input id="Attended" name="Attended" placeholder="Your Last School Attended " type="text" required></div>
 
 <p> License </p>
-<div class="fields">
-<div class="input-field">
 <select id="Professional License" name="Professional License" required>
-    <option value="select">select</option>
+<option value="select">select</option>
 <option value="Professional License">Professional License</option>
-<option value="None">None</option>
-<div class="error"></div>
-</div></select>
+<option value="None">None</option></select>
 
 
 <p> Certificates </p>
-<div class="fields">
-<div class="input-field">
     <select id="Certificates" name="Certificates" required>
     <option value="select">select</option>
 <option value="ESL">ESL related certificates</option>
 <option value="Non-ESL">Non-ESL related certificates</option>
 <option value="None">None</option>
-<div class="error"></div>
-</div></select></div></div></div>
+</select></div>
 
 <center>
  <div class="tops">
 <b>Work Experience</b>                        
 </center>
-</div>
 
 
- <p>Do you have any teaching experience?</p>
 <div class="fields">
 <div class="input-field">
+ <p>Do you have any teaching experience?</p>
     <select id="experience" name="experience" required>
     <option value="select">select</option>
 <option value="Yes">Yes</option>
 <option value="No">No</option>
-<div class="error"></div>
-</div></select></div>
+</select></div>
 
 
  <p>What type of teaching experience?</p>
-<div class="fields">
-<div class="input-field">
 <select id="type" name="type" required>
 <option value="select">select</option>
 <option value="Online English Teaching (Home-based)">Online English Teaching (Home-based)</option>
 <option value="Online English Teaching (Office-based)">Online English Teaching (Office-based)</option>
 <option value="English Tutoring (Man-to-Man Teaching)">English Tutoring (Man-to-Man Teaching)</option>
 <option value="Classroom Set Up (Primary, Secondary, or Tertiary)">Classroom Set Up (Primary, Secondary, or Tertiary)</option>
-<div class="error"></div>
-</div></select></div>
-
+</select>
 
 <p>Years of Teaching </p>
-<div class="fields">
-<div class="input-field">
 <select id="Years" name="Years" required>
 <option value="select">select</option>
 <option value="1 year">1 year</option>
@@ -498,12 +476,11 @@
 <option value="9 years">9 years</option>
 <option value="10 years">10 years</option>
 <option value=" more than 10 years"> more than 10 years</option>
-<div class="error"></div>
-</div></select></div>
+</select>
 
-                               
+<div class="input-field">
 <p>Other Work Experience </p>
-Years<select id="Work" name="Work" required>
+<select id="Work" name="Work" required>
 <option value="select">select</option>
 <option value="Architecture and Engineering">Architecture and Engineering</option>
 <option value="Building and Grounds Cleaning and Maintenance">Building and Grounds Cleaning and Maintenance</option>
@@ -526,14 +503,12 @@ Years<select id="Work" name="Work" required>
 <option value="Office and Administrative Support">Office and Administrative Support</option>
 <option value="Personal Care and Service">Personal Care and Service</option>
 <option value="Part-time (PM schedule)">Part-time (PM schedule)</option>
-<div class="error"></div>
-</div></select></div>
-
+</select></div></div>
 <center>
+
  <div class="tops">
 <b>Most Available Time to Teach</b>                        
-</center>
-</div>
+</center> </div>
 
 
  <p>Day</p>
@@ -542,7 +517,7 @@ Years<select id="Work" name="Work" required>
 <option value="Weekdays">Weekdays</option>
 <option value="Weekends ">Weekends </option>
 <option value="Both Weekdays and Weekends">Both Weekdays and Weekends</option>
-</div></select></div>
+</select>
 
 <p>Time</p>
 <select id="Time" name="Time" required>
@@ -551,16 +526,21 @@ Years<select id="Work" name="Work" required>
 <option value="13:00 - 16:00">13:00 - 16:00</option>
 <option value="00:00 - 08:00">00:00 - 08:00</option>
 <option value="16:00 - 24:00">16:00 - 24:00</option>
-<div class="error"></div>
-</div></select></div>
+</select><br>
+<br>
+
+</div>
 
 <input type="checkbox" id="certify" name="certify" value="information"required>
 <label for="certify">I hereby certify that the above information is true and correct.</label><br>
-<input type="checkbox" id="agree" name="agree" value="conditions">
-<label for="agree">I have read and agree with the terms and conditions of Non-Disclosure Agreement.</label><br>
+<input type="checkbox" id="agree" name="agree" value="conditions"required>
+<label for="agree">I have read and agree with the terms and conditions of Non-Disclosure Agreement.</label>
+<br>
 
-           <button type="submit">Submit</button> 
-        </form>
-    </div>
+           <center><button class="topp" type="submit">Submit</button></center> 
+
+ </div>
+        </form>   </div>
+
 </body>
 </html>
